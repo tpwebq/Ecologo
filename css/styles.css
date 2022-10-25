@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton-Regular.ttf");
+}
 /* line 2, ../sass/partials/_minh.scss */
 .minh-auto {
   min-height: auto;
@@ -291,9 +295,45 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.about-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.about-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .comingsoon-s1 {
   background-attachment: scroll;
   background-image: url(../img/comingsoon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.contact-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.contact-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,6 +349,15 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.index-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/index/index-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .privacy-s1 {
   background-attachment: scroll;
   background-image: url(../img/privacy.jpg);
@@ -317,47 +366,115 @@ body, html {
   background-size: cover;
 }
 
-/* line 4, ../sass/partials/_modules.scss */
-.bg-green {
-  background-color: #86dc2b !important;
+/* line 31, ../sass/partials/_mixins.scss */
+.services-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/services/services-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+@media all and (max-width: 991px), all and (orientation: portrait) {
+  /* line 31, ../sass/partials/_mixins.scss */
+  .about-s1 {
+    background-attachment: scroll;
+    background-image: url(../img/about/about-s1v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 31, ../sass/partials/_mixins.scss */
+  .about-s2 {
+    background-attachment: scroll;
+    background-image: url(../img/about/about-s2v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 31, ../sass/partials/_mixins.scss */
+  .index-s1 {
+    background-attachment: scroll;
+    background-image: url(../img/index/index-s1v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* line 6, ../sass/partials/_modules.scss */
+.about-s1 {
+  background-position-x: right !important;
+}
 /* line 9, ../sass/partials/_modules.scss */
+.about-s2 {
+  background-position: left !important;
+}
+
+/* line 14, ../sass/partials/_modules.scss */
+.bg-green {
+  background-color: #86dc2b;
+}
+
+/* line 19, ../sass/partials/_modules.scss */
 .border-green {
   border-color: #86dc2b !important;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 24, ../sass/partials/_modules.scss */
+.contact-s1 {
+  background-position: right !important;
+}
+
+/* line 29, ../sass/partials/_modules.scss */
+.index-s1 {
+  background-position: right !important;
+}
+
+/* line 34, ../sass/partials/_modules.scss */
 .navbar-logo {
   height: 40px;
 }
 
-/* line 19, ../sass/partials/_modules.scss */
+/* line 39, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-position-x: right !important;
 }
 
-/* line 24, ../sass/partials/_modules.scss */
+/* line 44, ../sass/partials/_modules.scss */
 .text-green {
   color: #86dc2b !important;
 }
-/* line 27, ../sass/partials/_modules.scss */
+/* line 47, ../sass/partials/_modules.scss */
 .text-shadow {
   text-shadow: 1px 1px 2px #000;
 }
 
-/* line 31, ../sass/partials/_modules.scss */
+/* line 51, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+
+/* line 55, ../sass/partials/_modules.scss */
 header {
   z-index: 10;
 }
 
-/* line 34, ../sass/partials/_modules.scss */
+/* line 58, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 39, ../sass/partials/_modules.scss */
+  /* line 62, ../sass/partials/_modules.scss */
+  .about-s2 {
+    background-color: #ccc !important;
+    background-blend-mode: multiply !important;
+  }
+
+  /* line 67, ../sass/partials/_modules.scss */
   .navbar-nav {
     backdrop-filter: blur(5px);
     background-color: #fff;

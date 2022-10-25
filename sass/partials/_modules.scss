@@ -1,13 +1,33 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
-
+@media all and (max-width: 991px), all and (orientation:portrait){
+    @include aoa-bg-series($img__classes--v,$img__aoa--v,0,"center","cover","scroll");
+}
+.about{
+    &-s1{
+        background-position-x: right!important;
+    }
+    &-s2{
+        background-position: left!important;
+    }
+}
 .bg{
     &-green{
-        background-color: $color__green!important;
+        background-color: $color__green;
     }
 }
 .border{
     &-green{
         border-color: $color__green!important;
+    }
+}
+.contact{
+    &-s1{
+        background-position: right!important;
+    }
+}
+.index{
+    &-s1{
+        background-position: right!important;
     }
 }
 .navbar{
@@ -28,6 +48,10 @@
         text-shadow: $text__shadow;
     }
 }
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "Anton";
+    letter-spacing: 2px;
+}
 header{
     z-index: 10;
 }
@@ -35,6 +59,10 @@ textarea{
     resize: none;
 }
 @media all and (max-width:767px){
+    .about-s2{
+        background-color:#ccc!important;
+        background-blend-mode: multiply!important;
+    }
     .navbar{
         &-nav{
             backdrop-filter: blur(5px); 
